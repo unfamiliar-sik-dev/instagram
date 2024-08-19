@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>코딩만 따라 해도 웹페이지가 만들어지는 HTML+CSS+자바스크립트</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/2e751c7e78.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
 
 </head>
 
@@ -28,19 +31,19 @@
         <!-- div 태그로 인해 프로필 사진이 인스타로고이미지 아래로 내려오게 된다. 웹페이지 구조 분할 가능-->
     </div>
     <div id="profile_info">
-      <div id="id">unfamiliar_sik 
+      <div id="id">
+        <span> unfamiliar_sik </span> 
         <i class="fa-solid fa-gear"></i>
       </div> 
       <button>프로필 편집</button>
     </div>
   </div>
-  
   <div>
   <p>
-    <strong>
+    <strong id="userInfo">
       낯선식 
     </strong><br/>
-    개발자
+    <span id="summary">프론트 개발자</span>
   </p>  
   </div>
   
