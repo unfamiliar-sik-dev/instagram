@@ -5,23 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>코딩만 따라 해도 웹페이지가 만들어지는 HTML+CSS+자바스크립트</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2e751c7e78.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <div>
-  <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="인스타그램이미지링크">
+  <div id="top">
+    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="인스타그램이미지링크">
   <!-- img 태그에는 block 속성이 없어, 줄 바꿈이 적용되지 않는다. input도 마찬가지다. -->
-  <input type="search" value="검색"/>
+    <input type="search" value="🔎 검색"/>
+    <div>
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-plane"></i>
+      <i class="fa-solid fa-compass"></i>
+      <i class="fa-solid fa-heart"></i>
+    </div>
   </div>
-
-  <div>
-  <img src="./image/profile.png" width="50px" alt="프로필사진">
-  </div>
-  <!-- div 태그로 인해 프로필 사진이 인스타로고이미지 아래로 내려오게 된다. 웹페이지 구조 분할 가능-->
 
   <div id="profile">
-  <h2> unfamiliar_sik </h2>
-  <button>프로필 편집</button>
+    <div id="profile_pic">
+      <img class="circle_pic" src="./image/profile.png"alt="프로필사진">
+        <!-- div 태그로 인해 프로필 사진이 인스타로고이미지 아래로 내려오게 된다. 웹페이지 구조 분할 가능-->
+    </div>
+    <div id="profile_info">
+      <div id="id">unfamiliar_sik 
+        <i class="fa-solid fa-gear"></i>
+      </div> 
+      <button>프로필 편집</button>
+    </div>
   </div>
   
   <div>
@@ -33,57 +44,70 @@
   </p>  
   </div>
   
-  <div>
-    <div>
+    <div id="highlight_area">
       <div class="highlight">
-      <div>
-      <img src="./image/hl 1.jpg" height="35px">
-      </div>
+        <div class="highlight_pic">
+          <img class="circle_pic"  src="./image/hl 1.jpg">
+        </div>
       <div>
         😶‍🌫️
       </div>
       </div>
-    </div>
     <div>
       <div class="highlight">
-      <div>
-        <img src="./image/hl 2.jpg" height="35px">
-      </div>
+        <div class="highlight_pic">
+          <img class="circle_pic" src="./image/hl 2.jpg" >
+        </div>
       <div>
         🏡
       </div>
       </div>
     </div>
+    <div></div>
+    </div>
 
-  </div>
-
-  <div>
-    <div>
+  <div id="start_bar">
+    <div class="start">
       게시물<br/>
       100
     </div>
-    <div>
+    <div class="start">
       팔로워<br/>
       500
     </div>
-    <div>
+    <div class="start">
       팔로우</br>
       500
     </div>
   </div>
-  <div>아이콘이 들어갈 자리</div>
+  <div id="sub_icons">
+    <div class="selected">
+      <i class="fas fa-border-all"></i>
+  </div>
+  <div><i class="fas fa-film"></i></div>
+  <div><i class="far fa-play-circle"></i></div>
+  <div><i class="far fa-bookmark"></i></div>
+  <div><i class="fas fa-user-tag"></i></div>
+</div>
+  </div>
   <div>
-    <img src="image/thumbnails/1.jpg" width="32%"/> 
+      <div class="thumbnails_gird">
+        <img src="image/thumbnails/1.jpg" class="thumbnails"/> 
     <!-- 퍼센트를 사용하여 너비나 높이를 지정하면, 부모의 너비의 32%값이 지정된다.  
      퍼센트로 지정된 값은 화면 크기에 따라 그 값이 유동적으로 바뀔 수도 있다. 반응형 웹이라고도 부른다.-->
-    <img src="image/thumbnails/2.jpg" width="32%"/>
-    <img src="image/thumbnails/3.jpg" width="32%"/>
-    <img src="image/thumbnails/4.jpg" width="32%"/>
-    <img src="image/thumbnails/5.jpg" width="32%"/>
-    <img src="image/thumbnails/6.jpg" width="32%"/>
-    <img src="image/thumbnails/7.jpg" width="32%"/>
-    <img src="image/thumbnails/8.jpg" width="32%"/>
-    <img src="image/thumbnails/9.jpg" width="32%"/>
+        <img src="image/thumbnails/2.jpg" class="thumbnails"/>
+        <img src="image/thumbnails/3.jpg" class="thumbnails"/>
+      </div>
+      <div class="thumbnails_gird">
+        <img src="image/thumbnails/4.jpg" class="thumbnails"/>
+        <img src="image/thumbnails/5.jpg" class="thumbnails"/>
+        <img src="image/thumbnails/6.jpg" class="thumbnails"/>
+      </div>
+      <div class="thumbnails_gird">
+        <img src="image/thumbnails/7.jpg" class="thumbnails"/>
+        <img src="image/thumbnails/8.jpg" class="thumbnails"/>
+        <img src="image/thumbnails/9.jpg" class="thumbnails"/>
+      </div>
 </div>
 
 </body>
